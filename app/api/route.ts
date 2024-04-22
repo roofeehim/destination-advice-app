@@ -10,8 +10,8 @@ async function fetchGPTResponse(prompt: string) {
       'Authorization': `Bearer ${OPENAI_API_KEY}`
     },
     body: JSON.stringify({
-      model: "gpt-4",
-      messages: [{ role: "system", content: "おじさんが国内の行き先を命令口調で提案する。" },
+      model: "gpt-3.5-turbo-0125",
+      messages: [{ role: "system", content: "おじさんが国内の行き先を横柄な命令口調で提案する。" },
                  { role: "user", content: prompt }]
     })
   });
